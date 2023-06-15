@@ -101,6 +101,7 @@ def jogadaJogador(navegacoesComputador):
     time.sleep(1)
 
     if erroOuAcerto(computadorCoordenadas, tabuleiroComputador, jogadorAtaqueLinha, jogadorAtaqueColuna) == 1:
+        navegacoesComputador -= 1
         return 1
     else:
         return 2
@@ -117,6 +118,7 @@ def jogadaComputador(navegacoesJogador):
     time.sleep(1)
 
     if erroOuAcerto(jogadorCoordenadas, tabuleiroJogador, computadorAtaqueLinha, computadorColuna) == 1:
+        navegacoesJogador -= 1
         return 1
     else:
         return 2
@@ -150,4 +152,3 @@ time.sleep(1)
 print("꘎♡━━━━━♡꘎ Obrigado por jogar!! ꘎♡━━━━━♡꘎")
 time.sleep(1)
 print(".⋅ ۵♡۵ ⋅. Desenvolvido por Alex, Mariana e Nicole .⋅ ۵♡۵ ⋅.")
-
