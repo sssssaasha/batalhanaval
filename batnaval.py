@@ -140,7 +140,7 @@ while navegacoesComputador != 0 and navegacoesJogador != 0:
 
 if navegacoesComputador == 0:
     vencedor = jogador
-if navegacoesComputador == 0:
+if navegacoesJogador == 0:
     vencedor = "Computador"
 
 print("----- 🛥️ FIM DO JOGO 🛥️ -----")
