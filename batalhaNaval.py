@@ -47,18 +47,18 @@ for navegacoes in range(navegacoesJogador):
     print(" ")
     jogadorLinha = int(input("Digite uma linha de 0 a 4: "))
     jogadorColuna = int(input("Digite uma coluna de 0 a 9: "))
-    jogadorCoordenadas[jogadorLinha][jogadorColuna] = 'x'
+    jogadorCoordenadas[jogadorLinha][jogadorColuna] = 'X'
 
 # Posições computador
 for navegacoes in range(navegacoesComputador):
     computadorLinha = random.randint(0, 4)
     computadorColuna = random.randint(0, 9)
-    computadorCoordenadas[computadorLinha][computadorColuna] = 'x'
+    computadorCoordenadas[computadorLinha][computadorColuna] = 'X'
 
 
 def jogada(coordenadas, tabuleiro, linha, coluna):
-    if coordenadas[linha][coluna] == 'x':
-        tabuleiro[linha][coluna] = 'x'
+    if coordenadas[linha][coluna] == 'X':
+        tabuleiro[linha][coluna] = 'X'
         print("Você acertou! :D")
         return 1
     else:
@@ -74,7 +74,7 @@ def mostrarTabuleiros():
     print(" ")
     print(f"Tabuleiro de {jogador}")
     for linha in range(5):
-        print("".join(tabuleiroJogador[linha]))
+        print("".join(jogadorCoordenadas[linha]))
     print(f'Jogadas restantes: {navegacoesJogador}')
     print(" ")
     print("Tabuleiro do Computador")
